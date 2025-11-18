@@ -3,7 +3,7 @@
 int main() {
     
     // Info da Carta 1
-    char estado1;
+    char estado1[50];
     char nomeCidade1[50];
     char codigo1[5];
     unsigned long int populacao1;
@@ -15,7 +15,7 @@ int main() {
     float superpoder1;
 
     // Info da Carta 2
-    char estado2;
+    char estado2[50];
     char nomeCidade2[50];
     char codigo2[5];
     unsigned long int populacao2;
@@ -37,7 +37,7 @@ int main() {
     // CARTA 1
     printf("Carta 1\n");
     printf("Estado (uma letra, ex: A): ");
-    scanf(" %c", &estado1);
+    scanf(" %[^\n]", &estado1);
     printf("Nome da Cidade (ex: Sao Paulo): ");
     scanf(" %[^\n]", nomeCidade1);
     printf("Digite o codigo (ex: A01): ");
@@ -55,7 +55,7 @@ int main() {
     // CARTA 2
     printf("Carta 2\n");
     printf("Estado (uma letra, ex: B): ");
-    scanf(" %c", &estado2); 
+    scanf(" %[^\n]", &estado2); 
     printf("Codigo da Carta (ex: B02): "); 
     scanf("%s", codigo2); 
     printf("Nome da Cidade (ex: Rio de Janeiro): "); 
@@ -90,7 +90,7 @@ int main() {
 
     //  Carta 1
     printf("Carta 2:\n");
-    printf("Estado: %c\n", estado1);
+    printf("Estado: %s\n", estado1);
     printf("Codigo: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("Populacao: %d\n", populacao1);
@@ -103,7 +103,7 @@ int main() {
 
     // Carta 2
     printf("Carta 2:\n");
-    printf("Estado: %c\n", estado2);
+    printf("Estado: %s\n", estado2);
     printf("Codigo: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
     printf("Populacao: %d\n", populacao2);

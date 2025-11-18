@@ -36,7 +36,7 @@ int main() {
 
     // CARTA 1
     printf("Carta 1\n");
-    printf("Estado (uma letra, ex: A): ");
+    printf("Estado (ex: Sao Paulo): ");
     scanf(" %[^\n]", &estado1);
     printf("Nome da Cidade (ex: Sao Paulo): ");
     scanf(" %[^\n]", nomeCidade1);
@@ -54,7 +54,7 @@ int main() {
 
     // CARTA 2
     printf("Carta 2\n");
-    printf("Estado (uma letra, ex: B): ");
+    printf("Estado (ex: Rio de Janeiro): ");
     scanf(" %[^\n]", &estado2); 
     printf("Codigo da Carta (ex: B02): "); 
     scanf("%s", codigo2); 
